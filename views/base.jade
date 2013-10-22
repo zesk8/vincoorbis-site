@@ -1,0 +1,63 @@
+doctype 5
+html(lang='en')
+  head
+    title= title
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description',content='')
+    meta(name='author', content='')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato:400,700,300')
+    link(rel='stylesheet', href='/css/bootstrap.css')
+    link(rel='stylesheet', href='/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/css/theme.css')
+    link(rel='stylesheet', href='/css/prettyPhoto.css')
+    link(rel='stylesheet', href='/css/zocial.css')
+  body
+    block content
+    script(src='/js/jquery.js')
+    script(src='/js/bootstrap.min.js')
+    script(src='/js/jquery.nivo.slider.pack.js')
+    script
+        $(window).load(function() {
+            $(".mail-contact").html("contacto@vincoorbis.com");
+            $('#nslider').nivoSlider({
+            effect: 'fade', directionNav: true, pauseOnHover: true});
+        });
+    script(src='/js/superfish.js')
+    script(src='/js/jquery.prettyPhoto.js')
+    script(src='/js/scripts.js')
+    script(src='/js/jquery.isotope.min.js')
+    //script(src='/js/sorting.js') 
+    script(src='/js/jquery.carouFredSel-6.2.1-packed.js')
+    script
+        $(window).load(function(){  
+            $('.projects').isotope({
+            });
+            $("#slider_home").carouFredSel({ width : "100%", height : "auto",
+            responsive : true,  circular : true, infinite   : false, auto : false,
+            items : { width : 231, visible: { min: 1, max: 3 }
+            },
+            swipe : { onTouch : true, onMouse : true },
+            scroll: { items: 3, },
+            prev : { button : "#sl-prev", key : "left"},
+            next : { button : "#sl-next", key : "right" }
+            });
+        });
+    script
+        $(function () {
+            $('div.element').hide();
+        });
+        var i = 0;//initialize
+        var int=0;
+        $(window).bind("load", function() {
+            var int = setInterval("doThis(i)",100); //fade in speed in milliseconds
+        }); 
+        function doThis() {
+            var imgs = $('div.element').length;
+            if (i >= imgs) {
+                clearInterval(int);
+            }
+            $('div.element:hidden').eq(0).fadeIn(100);
+            i++;//add 1 to the count
+        }          
+
+
