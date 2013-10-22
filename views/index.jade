@@ -1,0 +1,214 @@
+extends base
+
+block content
+	.header
+		.container
+			.logo
+				a(ref="/")
+					img.animated.bounceInDown(src="/img/logo.png", alt="")
+			nav#main_menu
+				.menu_wrap
+					ul.nav.sf-menu
+						li.sub-menu
+							a(href="javascript:{}") Productos
+							ul
+								li: a(href="/team")
+										span --
+										| manoderecha
+								li: a(href="/about")
+										span --
+										| Fac2d2
+						li.sub-menu
+							a(href="javascript:{}") Servicios
+						li.sub-menu
+							a(href="javascript:{}") Nosotros
+							ul
+								li: a(href="/scaffolding")
+										span --
+										|Quienes somos
+								li: a(href="/typography") 
+										span --
+										| Jobs	
+								li: a(href="/shortcodes.html")
+										span --
+										| Equipo
+						li.sub-menu
+							a(href="javascript:{}") Contacto
+	.nivo.nivo_height
+		.slider-wrapper.theme-default
+			#nslider.nivoSlider
+				img(src="img/large/index_slider1.jpg", alt="", title="#nivocaption1")
+				img(src="img/large/index_slider2.jpg", alt="", title="#nivocaption2")
+				img(src="img/large/index_slider3.jpg", alt="", title="#nivocaption3")
+		#nivocaption1.nivo-html-caption Caption One		
+		#nivocaption2.nivo-html-caption Caption Two	
+		#nivocaption3.nivo-html-caption Caption Three
+	.container.wrapper
+		.inner_content
+			.pad45
+			.row
+				.span3
+					.tile
+						.intro-icon-disc.cont-large
+							i.services.dev
+						h6
+							small CODE
+							br
+							a(href="#")	
+								span 12-column grid
+							p Bootstrap is designed to help people of all skill levels - designer or developer, huge nerd or early beginner. Use it as a complete kit or use to start something.
+					.pad25
+				.span3
+					.tile
+						.intro-icon-disc.cont-large
+							i.services.seo
+						h6
+							small SUPPORT
+							br
+							a(href="#")	
+								span growing library
+							p Despite being only 7kb (gzipped), Bootstrap is one of the most complete front-end toolkits out there with dozens of fully functional components.
+					.pad25
+				.span3
+					.tile
+						.intro-icon-disc.cont-large
+							i.services.app
+						h6
+							small DESIGN
+							br
+							a(href="#")	
+								span built for &amp; by nerds
+							p Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster.
+					.pad25
+				.span3
+					.tile
+						.intro-icon-disc.cont-large
+							i.services.des
+						h6
+							small CREATE
+							br
+							a(href="#")	
+								span responsive
+							p Bootstrap have gone fully responsive. Our components are scaled according to a range of resolutions and devices to provide a consistent experience.
+					.pad25
+			.row
+				.span12
+					.row
+						.pad25.hidden-phone
+						.span4
+							h1 Recent Work
+							h4 Lorem ipsum dolor sit amet, rebum putant recusabo in ius, pri simul tempor ne, his ei summo virtute.
+							p Nam ea labitur pericula. Meis tamquam pro te, cibo mutat necessitatibus id vim. An his tamquam postulant, pri id mazim nostrud diceret sapientem eloquentiam sea cu, sea ut exerci delicata. Corrumpit vituperata.
+							a.btn.btn-primary.btn-custom.btn-rounded(href="#") view portfolio
+						.span8.pad15.col_full2
+							#slider_home
+								.slider-item
+									.slider-image
+										.hover_colour
+											a(href="img/large/s1.jpg", data-rel="prettyPhoto")
+												img(src="img/small/s1.jpg", alt="")
+									.slider-title
+										h3
+											a(href="#") catalogue
+										p An his tamquam postulant, pri id mazim nostrud diceret.
+								.slider-item
+									.slider-image
+										.hover_colour
+											a(href="img/large/s2.jpg", data-rel="prettyPhoto")
+												img(src="img/small/s2.jpg", alt="")
+									.slider-title
+										h3
+											a(href="#") loupe
+										p An his tamquam postulant, pri id mazim nostrud diceret.
+								.slider-item
+									.slider-image
+										.hover_colour
+											a(href="img/large/s3.jpg", data-rel="prettyPhoto")
+												img(src="img/small/s3.jpg", alt="")
+									.slider-title
+										h3
+											a(href="#") retro rocket
+										p An his tamquam postulant, pri id mazim nostrud diceret.
+								.slider-item
+									.slider-image
+										.hover_colour
+											a(href="img/large/s4.jpg", data-rel="prettyPhoto")
+												img(src="img/small/s4.jpg", alt="")
+									.slider-title
+										h3
+											a(href="#") infographics
+										p An his tamquam postulant, pri id mazim nostrud diceret.
+								.slider-item
+									.slider-image
+										.hover_colour
+											a(href="img/large/s5.jpg", data-rel="prettyPhoto")
+												img(src="img/small/s5.jpg", alt="")
+									.slider-title
+										h3
+											a(href="#") mock up
+										p An his tamquam postulant, pri id mazim nostrud diceret.
+								.slider-item
+									.slider-image
+										.hover_colour
+											a(href="img/large/s6.jpg", data-rel="prettyPhoto")
+												img(src="img/small/s6.jpg", alt="")
+									.slider-title
+										h3
+											a(href="#") retro badges
+										p An his tamquam postulant, pri id mazim nostrud diceret.
+								.slider-item
+									.slider-image
+										.hover_colour
+											a(href="img/large/s7.jpg", data-rel="prettyPhoto")
+												img(src="img/small/s7.jpg", alt="")
+									.slider-title
+										h3
+											a(href="#") details
+										p An his tamquam postulant, pri id mazim nostrud diceret.
+								.slider-item
+									.slider-image
+										.hover_colour
+											a(href="img/large/s8.jpg", data-rel="prettyPhoto")
+												img(src="img/small/s8.jpg", alt="")
+									.slider-title
+										h3
+											a(href="#") vintage form
+										p An his tamquam postulant, pri id mazim nostrud diceret.
+							#sl-prev.widget-scroll-prev
+								i.icon-chevron-left.white
+							#sl-next.widget-scroll-next
+								i.icon-chevron-right.white.but_marg
+		.pad25.hidden-desktop
+	#footer
+		h1 get in touch
+		h3.center.follow We're social and we'd love to hear from you! Feel free to send us an email, find us on Google Plus, follow us on Twitter and join us on Facebook.
+		.follow_us
+			a.zocial.twitter(href="#")
+			a.zocial.facebook(href="#")
+			a.zocial.linkedin(href="#")
+			a.zocial.googleplus(href="#")
+	#address
+		.description
+			h2
+			p
+				|Blvd. Adolfo López Mateos #202 5to. piso
+				br
+				|Col. San Pedro de los Pinos,
+				br
+				|Del. Álvaro Obregón
+				br 
+				|C.P. 01180 México D.F.
+				br
+				|+52 (55) 3547.0082 | 3547.0083
+				span.mail-contact
+		#map
+			iframe(src="https://maps.google.com/maps/ms?msa=0&msid=217581121561457549710.0004e64c7624b19d14363&ie=UTF8&amp;t=m&ll=19.3901,-99.1896&spn=0,0&output=embed")
+	#footer2
+		.container
+			.row
+				.span12
+					.copyright VOP &copy;
+						script
+							var d = new Date();
+							document.write(' '+d.getFullYear()+' ');
+						|- Derechos reservados
